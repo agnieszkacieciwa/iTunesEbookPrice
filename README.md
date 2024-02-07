@@ -5,10 +5,11 @@ This application allows users to query the prices of ebooks in Polish złoty (PL
 The main goal is to determine the ebook price in PLN for a specific date, given a list of authors and titles. The data is fetched by querying the iTunes Search API for ebook details and the NBP API for exchange rates.
 
 ## Technologies
-- Python
-- Flask
-- PostgreSQL
-- Docker
+- `Python`
+- `Flask`
+- `PostgreSQL`
+- `Docker`
+- Other dependencies `(install using pip install -r requirements.txt)`
 
 ## How It Works
 1. The application sends queries to the iTunes Search API to fetch ebook details.
