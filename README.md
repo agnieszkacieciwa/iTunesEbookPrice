@@ -9,7 +9,7 @@ The main goal is to determine the ebook price in PLN for a specific date, given 
 - `Flask`
 - `PostgreSQL`
 - `Docker`
-- Other dependencies `(install using pip install -r requirements.txt)`
+- Other dependencies (install using `pip install -r requirements.txt`)
 
 ## How It Works
 1. The application sends queries to the iTunes Search API to fetch ebook details.
