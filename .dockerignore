@@ -1,0 +1,7 @@
+__pycache__
+.git
+.idea
+.vscode
+*.pyc
+*.pyo
+*.pyd
