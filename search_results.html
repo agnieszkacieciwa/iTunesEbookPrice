@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+
+    {% if itunes_data %}
+        <p>Autor: {{ itunes_data['author'] }}</p>
+        <p>Tytuł: {{ itunes_data['title'] }}</p>
+        <p>Data wydania: {{ itunes_data['release_date'] }}</p>
+        <p>Cena: {{ itunes_data['price'] }}</p>
+        <p>Kurs waluty: {{ exchange_rate }}</p>
+    {% else %}
+        <p>Brak wyników wyszukiwania.</p>
+    {% endif %}
+</body>
+</html>
