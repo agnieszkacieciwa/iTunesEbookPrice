@@ -66,7 +66,7 @@ The output is structured as follows:
 
 ## BPMN Diagram
 
-![bPMNDiagram](https://github.com/agnieszkacieciwa/iTunesEbookPrice/assets/88035266/bd1e99b8-e7ae-4531-bde9-18db5001a7d7)
+![bPMNDiagram(1)](https://github.com/agnieszkacieciwa/iTunesEbookPrice/assets/88035266/ee630a54-3b9d-4d35-868b-ab9185aa9a35)
 
 
 ## Usage 
