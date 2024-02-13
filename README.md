@@ -21,6 +21,12 @@ The main goal is to determine the ebook price in PLN for a specific date, given 
 - iTunes Search API
 - NBP API
 
+
+## BPMN Diagram
+
+![bPMNDiagram(1)](https://github.com/agnieszkacieciwa/iTunesEbookPrice/assets/88035266/ee630a54-3b9d-4d35-868b-ab9185aa9a35)
+
+
 ## Data Formats 
 
 ### Data Input
@@ -63,10 +69,6 @@ The output is structured as follows:
   }
 ]
 ```
-
-## BPMN Diagram
-
-![bPMNDiagram(1)](https://github.com/agnieszkacieciwa/iTunesEbookPrice/assets/88035266/ee630a54-3b9d-4d35-868b-ab9185aa9a35)
 
 
 ## Usage 
