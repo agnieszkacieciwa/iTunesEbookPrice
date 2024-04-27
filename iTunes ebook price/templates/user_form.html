@@ -11,8 +11,10 @@
         <p style="color: red;">{{ error_message }}</p>
     {% endif %}
     <form method="post" action="/">
-        <label for="entries">Wprowadź pary autora i tytułu (oddzielone przecinkami):</label>
+        <label for="entries">Wprowadź autora i tytułu (oddzielone przecinkami):</label>
+        <br>
         <textarea id="entries" name="entries" rows="5" cols="50" required></textarea>
+        <br>
         <br>
         <button type="submit">Search</button>
     </form>
