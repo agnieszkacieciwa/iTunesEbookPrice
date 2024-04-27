@@ -1,5 +1,5 @@
 # Calculate Ebook Prices Project
-This application allows users to query the prices of ebooks in Polish złoty (PLN) based on their release date for a given list of authors and titles. The obtained data is stored in a database, including information about the exchange rate and the table number from which it originates.
+This application allows users to query the prices of ebooks in Polish złoty (PLN) based on their release date for a given list of authors and titles.
 
 ## Introduction
 The main goal is to determine the ebook price in PLN for a specific date, given a list of authors and titles. The data is fetched by querying the iTunes Search API for ebook details and the NBP API for exchange rates.
@@ -12,32 +12,19 @@ The main goal is to determine the ebook price in PLN for a specific date, given 
 - Other dependencies (install using `pip install -r requirements.txt`)
 
 ## How It Works
-1. The application sends queries to the iTunes Search API to fetch ebook details.
-2. Exchange rates are obtained from the NBP API.
-3. The obtained data is organized and stored in a PostgreSQL database.
-4. The output is structured according to the specified format.
+The application works by taking input from the user in the form of the author and title of the ebook. It then queries the iTunes Store API to fetch information about the ebook, including its price in the iTunes currency. Next, it retrieves the currency exchange rate from the NBP API for the date of the ebook's release. Using this exchange rate, it converts the ebook price to PLN and displays it to the user
 
 ## APIs Used
 - iTunes Search API
 - NBP API
-
-
-## BPMN Diagram
-
-![bPMNDiagram(1)](https://github.com/agnieszkacieciwa/iTunesEbookPrice/assets/88035266/ee630a54-3b9d-4d35-868b-ab9185aa9a35)
-
 
 ## Data Formats 
 
 ### Data Input
 The input data consists of a list of authors and titles in the following format:
 ```arduino
-"Agatha Christie","The Mysterious Affair at Styles"
-"Agatha Christie","The Secret Adversary"
-"Agatha Christie","And Then There Were None"
-"Agatha Christie","Murder on the Orient Express"
-"Agatha Christie","The Murder of Roger Ackroyd"
-"Agatha Christie","Death on the Nile"
+Agatha Christie,The Secret Adversary
+Agatha Christie,The Lying Game
 ```
 ### Output Structure
 The output is structured as follows:
@@ -54,19 +41,6 @@ The output is structured as follows:
       "pricePLN": 53.158312,
       "tableNo": "51/A/NBP/2012"
     }
-  },
-  {
-    "name": "Agatha Christie",
-    "title": "Murder on the Orient Express",
-    "curr": "USD",
-    "price": 2.99,
-    "date": "2020-04-30",
-    "fromNBP": {
-      "rate": 3.1288,
-      "pricePLN": 9.355112,
-      "tableNo": "51/A/NBP/2012"
-    }
-  }
 ]
 ```
 
